@@ -74,8 +74,6 @@
     <wire from="(320,150)" to="(370,150)"/>
     <wire from="(400,140)" to="(400,230)"/>
     <wire from="(140,230)" to="(400,230)"/>
-    <wire from="(140,260)" to="(180,260)"/>
-    <wire from="(140,230)" to="(140,260)"/>
     <wire from="(240,70)" to="(250,70)"/>
     <wire from="(210,50)" to="(210,100)"/>
     <wire from="(210,100)" to="(260,100)"/>
@@ -89,24 +87,26 @@
     <wire from="(350,130)" to="(370,130)"/>
     <wire from="(100,50)" to="(140,50)"/>
     <wire from="(100,50)" to="(100,60)"/>
-    <comp lib="5" loc="(240,260)" name="D Flip-Flop"/>
+    <wire from="(140,300)" to="(180,300)"/>
+    <wire from="(140,230)" to="(140,300)"/>
+    <comp lib="1" loc="(180,60)" name="XOR Gate"/>
+    <comp lib="1" loc="(180,130)" name="AND Gate"/>
     <comp lib="0" loc="(40,60)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="x"/>
     </comp>
     <comp lib="1" loc="(400,140)" name="OR Gate"/>
-    <comp lib="1" loc="(290,110)" name="AND Gate"/>
     <comp lib="1" loc="(290,60)" name="XOR Gate"/>
-    <comp lib="1" loc="(180,60)" name="XOR Gate"/>
-    <comp lib="1" loc="(180,130)" name="AND Gate"/>
     <comp lib="0" loc="(400,60)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="S"/>
     </comp>
+    <comp lib="5" loc="(240,260)" name="D Flip-Flop"/>
     <comp lib="0" loc="(40,100)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="y"/>
     </comp>
+    <comp lib="1" loc="(290,110)" name="AND Gate"/>
   </circuit>
 </project>
